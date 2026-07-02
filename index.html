@@ -1,17 +1,65 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>홍길동의 첫 페이지</title>
+    <title>나의 멋진 자기소개 페이지</title>
+    
+    <style>
+        /* 여기서부터 CSS 코드가 시작되는 공간입니다 */
+
+        /* [CSS 키워드 1] 배경색(background) 바꾸기 */
+        body {
+            background: #f0f8ff; /* 앨리스 블루라는 연한 하늘색 배경 */
+            font-family: 'Malgun Gothic', sans-serif; /* [CSS 키워드 2] font 스타일 변경 */
+            text-align: center;
+            padding: 50px;
+        }
+
+        /* [CSS 키워드 3] .class 선택자를 활용한 이미지 크기(width, height) 조절 */
+        .my-profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%; /* 이미지를 동그랗게 깎아줍니다 */
+            border: 4px solid #ffffff;
+            transition: all 0.3s ease; /* 마우스 올렸을 때 부드럽게 변하도록 설정 */
+        }
+
+        /* [CSS 키워드 4] :hover 효과 - 이미지에 마우스 올리면 크기가 살짝 커짐 */
+        .my-profile-img:hover {
+            width: 200px;
+            height: 200px;
+        }
+
+        /* [CSS 키워드 5] 글자색(color) 바꾸기 */
+        .intro-text {
+            color: #333333;
+            font-size: 18px;
+        }
+
+        .github-link {
+            color: #007acc;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        /* 링크에 마우스 올리면(:hover) 글자색이 빨갛게 변함 */
+        .github-link:hover {
+            color: #ff4500;
+        }
+    </style>
 </head>
 <body>
 
     <div>
-        <h3>홍길동의123132 방</h3>
-        <img src="https://picsum.photos/151" alt="프로필 사진">
+        
+        <h1>안녕하세요, 홍길동의 프로필입니다</h1>
+        
+        <img class="my-profile-img" src="https://picsum.photos/200" alt="내 프로필 사진">
+        
+        <p class="intro-text">친구의 훌륭한 가이드 덕분에 HTML과 CSS를 정복하고 있습니다!</p>
+        
         <p>
-            <a href="https://naver.com">네이버로 이동하기</a>
+            <a class="github-link" href="https://github.com" target="_blank">👉 저의 깃허브 저장소 구경하기</a>
         </p>
+
     </div>
 
 </body>
